@@ -10,7 +10,6 @@ body:
   - type: input
     id: doi
     attributes: { label: DOI or URL, placeholder: 10.1234/abcd.5678 }
-    validations: { required: false }
   - type: input
     id: title
     attributes: { label: Dataset title, placeholder: Shock Hugoniot of GGG }
@@ -18,7 +17,6 @@ body:
   - type: textarea
     id: refitem
     attributes: { label: Table/Figure in reference, placeholder: "Table X" }
-    validations: { required: false }
   - type: textarea
     id: material
     attributes: { label: Material (name & composition), placeholder: "Gd3Ga5O12 (Gd:3, Ga:5, O:12)" }
@@ -30,7 +28,6 @@ body:
   - type: textarea
     id: std
     attributes: { label: Standards used, placeholder: "e.g. flyer, base, window material" }
-    validations: { required: false }
   - type: textarea
     id: columns_units
     attributes:
