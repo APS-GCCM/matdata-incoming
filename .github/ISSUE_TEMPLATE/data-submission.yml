@@ -39,7 +39,7 @@ body:
     id: columns_units
     attributes:
       label: "Columns & units (header you used)"
-      placeholder: "rho0(g/cc) drho0(g/cc) P(GPa) dP(GPa) Us(km/s) dUs(km/s) Up(km/s) dUp(km/s) rho(g/cc) drho(g/cc)"
+      placeholder: "rho0(g/cc) Us(km/s) Up(km/s) rho(g/cc) P(GPa)"
 
   - type: textarea
     id: contact
