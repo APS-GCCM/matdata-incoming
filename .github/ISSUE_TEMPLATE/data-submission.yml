@@ -5,38 +5,48 @@ labels: [submission, needs-triage]
 body:
   - type: textarea
     id: ref
-    attributes: { label: Reference, placeholder: "authors, title, journal, article, year" }
+    attributes: { label: "Reference", placeholder: "authors, title, journal, article, year" }
     validations: { required: true }
+
   - type: input
     id: doi
-    attributes: { label: DOI or URL, placeholder: 10.1234/abcd.5678 }
+    attributes: { label: "DOI or URL", placeholder: "10.1234/abcd.5678" }
+
   - type: input
     id: title
-    attributes: { label: Dataset title, placeholder: Shock Hugoniot of GGG }
+    attributes: { label: "Dataset title", placeholder: "Shock Hugoniot of GGG" }
     validations: { required: true }
+
   - type: textarea
     id: refitem
-    attributes: { label: Table/Figure in reference, placeholder: "Table X" }
+    attributes: { label: "Table/Figure in reference", placeholder: "Table X" }
+
   - type: textarea
     id: material
-    attributes: { label: Material (name & composition), placeholder: "Gd3Ga5O12 (Gd:3, Ga:5, O:12)" }
+    attributes: { label: "Material (name & composition)", placeholder: "Gd3Ga5O12 (Gd:3, Ga:5, O:12)" }
     validations: { required: true }
+
   - type: textarea
     id: method
-    attributes: { label: Method, placeholder: "flyer impact" }
+    attributes: { label: "Method", placeholder: "flyer impact" }
     validations: { required: true }
+
   - type: textarea
     id: std
-    attributes: { label: Standards used, placeholder: "e.g. flyer, base, window material" }
+    attributes: { label: "Standards used", placeholder: "e.g. flyer, base, window material" }
+
   - type: textarea
     id: columns_units
     attributes:
-      label: Columns & units (header you used)
+      label: "Columns & units (header you used)"
       placeholder: "rho0(g/cc) drho0(g/cc) P(GPa) dP(GPa) Us(km/s) dUs(km/s) Up(km/s) dUp(km/s) rho(g/cc) drho(g/cc)"
+
   - type: textarea
     id: contact
-    attributes: { label: Contact (name, affiliation, email, ORCID optional) }
+    attributes:
+      label: "Contact (name, affiliation, email, ORCID optional)"
     validations: { required: true }
+
   - type: checkboxes
     id: legal
     attributes:
@@ -46,6 +56,7 @@ body:
           required: true
         - label: I have rights to submit for open release
           required: true
+
   - type: markdown
     attributes:
       value: "**Attach files here before submitting:** drag/drop `submission.yaml` and `.tsv/.csv/.txt`."
