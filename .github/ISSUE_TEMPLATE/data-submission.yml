@@ -21,17 +21,17 @@ body:
     id: refitem
     attributes: { label: "Table/Figure in reference", placeholder: "Table X" }
 
-  - type: textarea
+  - type: input
     id: material
-    attributes: { label: "Material (name & composition)", placeholder: "Gd3Ga5O12 (Gd:3, Ga:5, O:12)" }
+    attributes: { label: "Material (e.g. name, composition)", placeholder: "Gd3Ga5O12" }
     validations: { required: true }
 
-  - type: textarea
+  - type: input
     id: method
     attributes: { label: "Method", placeholder: "flyer impact" }
     validations: { required: true }
 
-  - type: textarea
+  - type: input
     id: std
     attributes: { label: "Standards used", placeholder: "e.g. flyer, base, window material" }
 
@@ -41,7 +41,7 @@ body:
       label: "Columns & units (header you used)"
       placeholder: "rho0(g/cc) Us(km/s) Up(km/s) rho(g/cc) P(GPa)"
 
-  - type: textarea
+  - type: input
     id: contact
     attributes:
       label: "Contact (name, affiliation, email, ORCID optional)"
