@@ -1,0 +1,54 @@
+name: Data submission
+description: Submit a high-pressure dataset (tab or space delimited text + essential metadata)
+title: "[DATA] <Short title>"
+labels: [submission, needs-triage]
+body:
+  - type: textarea
+    id: ref
+    attributes: { label: Reference, placeholder: "authors, title, journal, article, year" }
+    validations: { required: true }
+  - type: input
+    id: doi
+    attributes: { label: DOI or URL, placeholder: 10.1234/abcd.5678 }
+    validations: { required: false }
+  - type: input
+    id: title
+    attributes: { label: Dataset title, placeholder: Shock Hugoniot of GGG }
+    validations: { required: true }
+  - type: textarea
+    id: refitem
+    attributes: { label: Table/Figure in reference, placeholder: "Table X" }
+    validations: { required: false }
+  - type: textarea
+    id: material
+    attributes: { label: Material (name & composition), placeholder: "Gd3Ga5O12 (Gd:3, Ga:5, O:12)" }
+    validations: { required: true }
+  - type: textarea
+    id: method
+    attributes: { label: Method, placeholder: "flyer impact" }
+    validations: { required: true }
+  - type: textarea
+    id: std
+    attributes: { label: Standards used, placeholder: "e.g. flyer, base, window material" }
+    validations: { required: false }
+  - type: textarea
+    id: columns_units
+    attributes:
+      label: Columns & units (header you used)
+      placeholder: "rho0(g/cc) drho0(g/cc) P(GPa) dP(GPa) Us(km/s) dUs(km/s) Up(km/s) dUp(km/s) rho(g/cc) drho(g/cc)"
+  - type: textarea
+    id: contact
+    attributes: { label: Contact (name, affiliation, email, ORCID optional) }
+    validations: { required: true }
+  - type: checkboxes
+    id: legal
+    attributes:
+      label: Declarations
+      options:
+        - label: Data is publicly released and export-compliant
+          required: true
+        - label: I have rights to submit for open release
+          required: true
+  - type: markdown
+    attributes:
+      value: "**Attach files here before submitting:** drag/drop `submission.yaml` and `.tsv/.csv/.txt`."
