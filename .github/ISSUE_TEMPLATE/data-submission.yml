@@ -17,7 +17,7 @@ body:
     attributes: { label: "Dataset title", placeholder: "Shock Hugoniot of GGG" }
     validations: { required: true }
 
-  - type: textarea
+  - type: input
     id: refitem
     attributes: { label: "Table/Figure in reference", placeholder: "Table X" }
 
@@ -52,7 +52,7 @@ body:
     attributes:
       label: Declarations
       options:
-        - label: Data is publicly released and export-compliant
+        - label: Data are publicly released and export-compliant
           required: true
         - label: I have rights to submit for open release
           required: true
