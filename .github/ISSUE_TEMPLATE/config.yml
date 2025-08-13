@@ -1,0 +1,5 @@
+blank_issues_enabled: false
+contact_links:
+  - name: No GitHub account? Email your submission
+    url: mailto:dswift@llnl.gov
+    about: Send submission.yaml and data.tsv; editors will open a PR for you.
